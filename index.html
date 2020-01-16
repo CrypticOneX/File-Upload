@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ashutosh">
+        <meta name="description" content="Simple File Uploader">
+        <link rel="stylesheet" href="materialize.min.css">
+        <script src="materialize.min.js"></script>
+        <title>File Uploader</title>
+    </head>
+    <body>
+        <div class="container">
+            <h4>File Uploader</h4>
+            <br>
+            <p>Simple File Uploader</p><br>
+            <form action="upload.php" method="POST" enctype="multipart/form-data" id="upload_file">
+                <input type="file" name="file1" id="filedata">
+                <button type="submit" class="btn blue darken-4 waves-effect">Upload</button>
+            </form>
+            <br>
+            <div id="out"></div><br>
+            <div class="progress">
+                <div class="delimeter blue darken-4" style="width:0%" id="upload_status">70</div>
+            </div>
+            <p>Developed By Ashutosh</p>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
